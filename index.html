@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Store — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page-home">
+  <header class="site-header" data-inject-header></header>
+
+  <main class="container centered">
+    <section class="card auth-card">
+      <h2>Welcome to Daily Store</h2>
+      <p class="muted">A minimal demo e-commerce frontend to explore product browsing, search, cart, and account flows — all stored locally in your browser.</p>
+
+      <div class="auth-forms">
+        <div class="split">
+          <form id="login-form" class="form" autocomplete="off">
+            <h3>Login</h3>
+            <label>Email
+              <input type="email" id="login-email" required />
+            </label>
+            <label>Password
+              <input type="password" id="login-password" required />
+            </label>
+            <div class="row">
+              <button type="submit" class="btn">Login</button>
+              <button type="button" id="logout-btn" class="btn btn-ghost hidden">Logout</button>
+            </div>
+            <div id="login-msg" class="muted small"></div>
+          </form>
+
+          <form id="signup-form" class="form" autocomplete="off">
+            <h3>Signup</h3>
+            <label>Name
+              <input type="text" id="signup-name" required />
+            </label>
+            <label>Email
+              <input type="email" id="signup-email" required />
+            </label>
+            <label>Password
+              <input type="password" id="signup-password" required />
+            </label>
+            <div class="row">
+              <button type="submit" class="btn">Create Account</button>
+            </div>
+            <div id="signup-msg" class="muted small"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

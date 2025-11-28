@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Store — Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="page-cart">
+  <header class="site-header" data-inject-header></header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Your Cart</h2>
+      <div id="cart-list"></div>
+      <div id="cart-empty" class="muted">Your cart is empty.</div>
+
+      <div class="cart-footer">
+        <div class="total">Total: <strong id="cart-total">₹0.00</strong></div>
+        <div>
+          <button id="checkout-btn" class="btn">Checkout (Demo)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
